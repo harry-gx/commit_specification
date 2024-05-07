@@ -218,6 +218,33 @@ git config --global user.name "harry"
 
 ​		Commitizen是一个强大的工具，用于撰写合格的 Git 提交消息。使用 Commitizen 可以帮助团队遵循统一的提交消息规范，使提交历史更加清晰和易读。
 
+
+
+- ##### 依赖
+
+
+使用下面命令查看nodejs版本：
+
+```shell
+node -v
+```
+
+如果你的本地环境的nodejs版本低于12，需要更新版本
+
+```shell
+wget https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-x64.tar.xz
+
+sudo apt-get install xz-utils
+
+sudo tar -C /usr/local --strip-components 1 -xJf node-v14.17.0-linux-x64.tar.xz
+
+which node
+
+sudo ln -sf /usr/local/bin/node /usr/bin/node
+```
+
+
+
 - ##### 安装commitizen
 
 首先，通过以下命令全局安装 Commitizen：
